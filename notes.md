@@ -93,7 +93,8 @@ Ex : [
    > node modules is a folder where all the package gets install .
    
 # npm i :
-   > it first installs the main package by checking the package.json then looks for child dependency of the package from the package-lock and then install .
+   > it first installs the main package by checking the package.json .
+   > Then looks for child dependency of the package from the package-lock and then install .
 
 local dep
 global
@@ -114,8 +115,8 @@ dev
 # for dev dependency
   > npm i package name --save-dev
 
-  > Those package which is required at the time of development called as dev dependencies like Logging or for test cases.
-  
+  > Those package which are required at the time of development called as dev dependencies like Logging or for test cases.
+
   > npm i chai --save-dev 
   > hence node module is heavy folder to avoid the load over that we divide what to install on server wht not to install we differentiate between that .
 
