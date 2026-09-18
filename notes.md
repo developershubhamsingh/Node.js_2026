@@ -7,6 +7,13 @@
 # git bash : through git bash you can push code to github.
 # ctrl + f to search in a file .
 
+## MERN Stack : 
+  > JavaScript is the common thread connecting all of them.
+  > React is a JS library, Node.js is a JS runtime for the backend
+  > MongoDB stores data in a JSON-like format
+  > we can build an entire full-stack application using just one language.
+  > This reduces context-switching, speeds up development, and makes data transfer seamless."
+
 git init    
 git add .
 git commit -m "first commit"
@@ -20,25 +27,29 @@ git push -u origin main
 
 
 # Node.js allows to run JavaScript outside the browser, especially on the server.
-# It is used to build server-side applications.
+> It is used to build server-side applications.
+> it is single threaded ,async ,non blocking I / O .
 
-# Nodejs : it is single threaded ,async ,non blocking I / O .
+# Nodejs Features : it is single threaded ,async ,non blocking I / O .
   > Thread = A way to execute Instructions .
   
   > single threaded  : Node.js uses only one main thread to handle all client requests.
 
   > async : Multiple tasks can be started without waiting for previous tasks to finish. 
 
-  > non blocking I / O : Input/Output tasks (like reading file, DB query, API call) run in the background, and meanwhile Node.js can accept new requests.
+  > non blocking I / O : Input/Output tasks (like reading file, DB query, API call) runs in the background, and meanwhile Node.js can accept new requests.
 
 # NPM: https://www.npmjs.com/
-    It is a open source registry where all packages are kept that anyone can try and contribute to the developments .
+   > It is a open source registry 
+   > where all the packages are kept
+   > that anyone can try and contribute to the developments .
  
-# packages : it is a supporting library 
+# packages : it is a supporting library i.e.(ready-made code)
+
     
 # json : 
   >  javascript Object Notation .
-  >  Format to represent the data .
+  >  It is a Format to represent the data .
   >  It is array of objects .
 
 Ex : [
@@ -61,10 +72,10 @@ Ex : [
             ind : "bollywood"
         }
 # package.json : 
-   >  This is Entry point to the applications .
+   >  This is configuration file of the applications .
    >  Contains metadata (name,version.descriptions).
    >  Contains scripts( run ,build,test) .
-   >  Contains all record of the packages install .
+   >  Contains record of the packages install .
 
 # step to generate package.json 
    >  NodejS must be installed in laptop
@@ -84,16 +95,16 @@ Ex : [
 # npm i :
    > it first installs the main package by checking the package.json then looks for child dependency of the package from the package-lock and then install .
 
-# gitignore : file or folder we don't want to push to git we write the file or folder name in gitignore file ex: node_module folder .
-
 local dep
 global
 dev
 
-# step to install package(local dep)
+# step to install package(local dep) i.e Local to that specific project folder only.
    > NodejS must be installed in laptop
    > go inside the folder using cmd/terminal
    > npm i package name / npm install package@version
+
+# gitignore : file or folder we don't want to push to git we write the file or folder name in gitignore file ex: node_module folder .
 
 # ===================Day 2 ==================================
 # Dependencies:
@@ -102,7 +113,9 @@ dev
 
 # for dev dependency
   > npm i package name --save-dev
+
   > Those package which is required at the time of development called as dev dependencies like Logging or for test cases.
+  
   > npm i chai --save-dev 
   > hence node module is heavy folder to avoid the load over that we divide what to install on server wht not to install we differentiate between that .
 
