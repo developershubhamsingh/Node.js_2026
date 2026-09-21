@@ -7,11 +7,20 @@
 # git bash : through git bash you can push code to github.
 # ctrl + f to search in a file .
 
-## MERN Stack : 
-  > JavaScript is the common thread connecting all of them.
-  > React is a JS library, Node.js is a JS runtime for the backend
-  > MongoDB stores data in a JSON-like format
-  > we can build an entire full-stack application using just one language.
+## Why MERN Stack :  
+
+  > Bcz JavaScript is common thread connecting all of them.
+
+  > React is JS library, Node.js is JS runtime for the backend  
+        >JavaScript library is a collection of ready-made or pre-written code that developers reuse to solve problems or to save time .
+        > React is a JS library because it provides pre-written code and packages to build user interfaces quickly."
+        >"Node.js is a JS runtime because it provides an environment to run JavaScript code directly on a computer server instead of a browser."
+        > Node.js provides an environment by incorporating the V8 engine and C++ modules to execute JavaScript code
+
+  > MongoDB stores data in JSON-like format
+
+  > we can build entire full-stack application using just one language.
+
   > This reduces context-switching, speeds up development, and makes data transfer seamless."
 
 git init    
@@ -122,14 +131,19 @@ dev
 
 # Basic NodeJS (Inbuilt package in node) (Os,file,http)
 
+> Digital Memory Hierarchy (Sequence Table)
+  > Bytes (B) → Kilobytes (KB) → Megabytes (MB) → Gigabytes (GB) → Terabytes (TB) 
+
 1 KB = 1024 bytes        
 1 MB = 1024 × 1024 bytes = 1,048,576 bytes
-1 GB =1024 × 1024 × 1024 bytes = 1,073,741,824 bytes
+1 GB = 1024 × 1024 × 1024 bytes = 1,073,741,824 bytes
   or
 1 KB = 1000 Bytes
 1 MB = 1000 KB
 1 GB = 1000 MB
 1 TB = 1024 GB
+
+> 1 baar 1024 = Kilobytes (KB) -> 2 baar 1024 = Megabytes (MB) -> 3 baar 1024 = Gigabytes (GB) -> 4 baar 1024 = Terabytes (TB) 
 
 # fs : 
 writefile()
