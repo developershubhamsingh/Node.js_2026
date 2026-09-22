@@ -1,0 +1,14 @@
+{
+  "name": "inbuilt",
+  "version": "1.0.0",
+  "main": "test.js",
+  "type": "module",
+  "scripts": {
+    "start": "node staticApi.js",
+    "dev":"nodemon staticApi.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

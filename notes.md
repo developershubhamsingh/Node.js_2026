@@ -12,16 +12,17 @@
   > Bcz JavaScript is common thread connecting all of them.
 
   > React is JS library, Node.js is JS runtime for the backend  
-        >JavaScript library is a collection of ready-made or pre-written code that developers reuse to solve problems or to save time .
-        > React is a JS library because it provides pre-written code and packages to build user interfaces quickly."
-        >"Node.js is a JS runtime because it provides an environment to run JavaScript code directly on a computer server instead of a browser."
+        > React is a JS library because it only focuses on building the UI and   leaves total control of the application architecture to the developer.
+        > Node.js is a JS runtime because it provides an environment to run JavaScript code directly on a computer server instead of a browser.
         > Node.js provides an environment by incorporating the V8 engine and C++ modules to execute JavaScript code
 
   > MongoDB stores data in JSON-like format
 
-  > we can build entire full-stack application using just one language.
+  >SO we can build entire full-stack application using just one language.
 
   > This reduces context-switching, speeds up development, and makes data transfer seamless."
+
+# Library is a collection of ready-made or pre-written code that developers reuse to solve problems and save time .
 
 git init    
 git add .
@@ -35,7 +36,7 @@ git branch -M main
 git push -u origin main
 
 
-# Node.js allows to run JavaScript outside the browser, especially on the server.
+# Node.js allows to run JavaScript code outside the browser, especially on the computer server.
 > It is used to build server-side applications.
 > it is single threaded ,async ,non blocking I / O .
 
@@ -147,12 +148,13 @@ dev
 
 # fs : 
 writefile()
-    > it takes 3 parameters (filename ,data ,callback).
     > The writeFile() method is used to create a new file and write content to it.
-    > If the file already exists, it will be overwritten..
+    > it takes 3 parameters (filename ,data ,callback).
+    > If the file already exists, it will be overwritten.
+    > writeFile replaces the old content with new content when it runs.
 appendFile()
-    > it takes 3 parameters(filename ,data ,callback).
     > The appendFile() method is used to add content to an existing file.
+    > it takes 3 parameters(filename ,data ,callback).
     > If the file does not exist, it will be created.
     > it will keep adding the content no of times the file will run.
 readFile()
@@ -160,8 +162,7 @@ readFile()
     > callback takes two parameters i.e. (error ,data).
     > The readFile() method is used to read the content of a file.
 unlink()
-    > it takes 2 parameters(filename ,no param callback).
-    > But do error handling in callback to track the error because if file is not there even then it sat file deleted. 
+    > it takes 2 parameters(filename ,callback).
     > The unlink() method is used to delete a file from the file system.
 rename()
     > it takes 3 parameters(oldFilename ,newFilename ,callback).
@@ -169,19 +170,20 @@ rename()
     
 # callback function : when we pass function as a parameter in another function .
 
-# Apis : It is a url , developed in backend by any language ,that returns json format of data when hit or calls . 
+# Apis : It is a url or endpoint , developed in backend that mostly returns json format of data when hit or calls . 
 
 # Rest full Apis: Every request act as new request .
- ex : you search for some records later again you search for new records that will not save data anywhere .
+ > ex : you search for some records later again you search for new records The server doesn't remember that you are the same person Every time you search, you must send your identity (like an auth token) with the request..
 
 local host = or = 127.0.0.1: port numbers
 avoid port numbers 8080 
 
 # Handling Routes with http is difficult so Express is there for creating servers and handling routes.
 
-# express is a framework that is used in nodejs for creating server and handling routes.
- > It creates servers, handles routes, and using middleware much easier.
- > If you create a server using only Node.js, you have to write more code. But with Express.js, the same work becomes shorter and simpler.
+# express is a framework of nodejs that is used for creating server and handling routes.
+
+# static Api -> it is not going to interact with database.
+# Dynamic APIs (Jo database ke sath interact karti hain)
 
 # nodemon : 
     every time we make change in file or code we need to restart the server to reflect in the browser so nodemon package helps to get over this.
@@ -216,7 +218,8 @@ Request–Response handle करना
 Backend की पूरी structure बनाना
 Express = Server
 
-# A route in Express is defined by the HTTP method and the path; changing the path creates a new route.
+# A route in Express is defined by the HTTP method and the path;
+> changing the path creates a new route.
 
 # In Express, a route that returns data (JSON) is considered an API endpoint.
 

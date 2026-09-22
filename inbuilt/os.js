@@ -8,7 +8,7 @@ console.log("Operating System ", os.platform());
 console.log(" Architecture", os.arch());
 // Architecture x64
 
-console.log("CPU", os.cpus().length)
+console.log("CPU", os.cpus().length," core")
 //CPU 4
 
 console.log("total memory", (os.totalmem() / 1024 / 1024 / 1024).toFixed(2), "GB")
