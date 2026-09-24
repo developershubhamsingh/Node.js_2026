@@ -12,13 +12,13 @@
   > Bcz JavaScript is common thread connecting all of them.
 
   > React is JS library, Node.js is JS runtime for the backend  
-        > React is a JS library because it only focuses on building the UI and   leaves total control of the application architecture to the developer.
+        > React is a JS library because it only focuses on building the UI and leaves total control of the application architecture to the developer.
         > Node.js is a JS runtime because it provides an environment to run JavaScript code directly on a computer server instead of a browser.
         > Node.js provides an environment by incorporating the V8 engine and C++ modules to execute JavaScript code
 
   > MongoDB stores data in JSON-like format
 
-  >SO we can build entire full-stack application using just one language.
+  > SO we can build entire full-stack application using just one language.
 
   > This reduces context-switching, speeds up development, and makes data transfer seamless."
 
@@ -134,15 +134,15 @@ dev
 
 > Digital Memory Hierarchy (Sequence Table)
   > Bytes (B) → Kilobytes (KB) → Megabytes (MB) → Gigabytes (GB) → Terabytes (TB) 
-
+> The Binary System (Base-2)
 1 KB = 1024 bytes        
 1 MB = 1024 × 1024 bytes = 1,048,576 bytes
 1 GB = 1024 × 1024 × 1024 bytes = 1,073,741,824 bytes
-  or
+> The Decimal System (Base-10)  
 1 KB = 1000 Bytes
 1 MB = 1000 KB
 1 GB = 1000 MB
-1 TB = 1024 GB
+1 TB = 1000 GB
 
 > 1 baar 1024 = Kilobytes (KB) -> 2 baar 1024 = Megabytes (MB) -> 3 baar 1024 = Gigabytes (GB) -> 4 baar 1024 = Terabytes (TB) 
 
@@ -186,7 +186,7 @@ avoid port numbers 8080
 # Dynamic APIs (Jo database ke sath interact karti hain)
 
 # nodemon : 
-    every time we make change in file or code we need to restart the server to reflect in the browser so nodemon package helps to get over this.
+    every time we make change in file or code we need to restart the server to reflect the content in the browser so nodemon package helps to get over this.
     npm i nodemon
 
 # install global packages
@@ -218,7 +218,7 @@ Request–Response handle करना
 Backend की पूरी structure बनाना
 Express = Server
 
-# A route in Express is defined by the HTTP method and the path;
+# A route in Express is defined by the HTTP method ;
 > changing the path creates a new route.
 
 # In Express, a route that returns data (JSON) is considered an API endpoint.
@@ -233,7 +233,7 @@ Get > Retrieve the data
 Put/Patch > Update the records
 Delete > Remove
 
-=> To access the method from the express we have to make the objects of express.
+// To access the method of express we have to call function of express .
 
 => Try express router when dealing with routes . 
 

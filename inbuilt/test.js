@@ -32,18 +32,19 @@
 // let http = require("http");
 //write "type": "commonjs" in package.json,
 
-import http from "http";
-let port = 7000
+// import http from "http";
+// let port = 7000
 
-let server = http.createServer((req, res) => {
-    res.write("<h1>Hello This is Node Js </h1>");
-    res.end()
-})
+// let server = http.createServer((req, res) => {
+//     res.write("<h1>Hello This is Node Js </h1>");
+//     res.end()
+// })
 
 
 
-server.listen(port, (error) => {
-    if (error) throw error;
-    console.log(`Server Running On Port ${port}`)
-})
+// server.listen(port, (error) => {
+//     if (error) throw error;
+//     console.log(`Server Running On Port ${port}`)
+// })
 
+ 

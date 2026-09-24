@@ -1,8 +1,9 @@
 //creating apis with inbuilt package http then we get to know what is the problem with http and why we need express.
 //handling route with http server is difficult so work with express .
 //express is a framework of node that allows to create routes very easily .
- 
+
 const http = require('http');
+let port = 7000;
 
 // creating server
 // request : what we send to the server(by three ways i.e. params ,queryParams,body) .
@@ -13,7 +14,11 @@ let server = http.createServer((req, res) => {
     res.end()
 })
 // 
-server.listen(7000)
+server.listen(port, () => {
+    console.log("Server Running On Port ", port)
+}).on("error", (error) => {
+    console.log("Server Error", error)
+})
 
 // error handling can also be done but not necessary .//
 // server.listen(7000, (err) => {
