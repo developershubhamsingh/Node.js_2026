@@ -18,11 +18,11 @@
 
   > MongoDB stores data in JSON-like format
 
-  > SO we can build entire full-stack application using just one language.
+  > SO we can build entire full-stack application using one language.
 
   > This reduces context-switching, speeds up development, and makes data transfer seamless."
 
-# Library is a collection of ready-made or pre-written code that developers reuse to solve problems and save time .
+# Library: It is a collection of ready-made or pre-written code that provides specific functionalities.
 
 git init    
 git add .
@@ -54,7 +54,7 @@ git push -u origin main
    > where all the packages are kept
    > that anyone can try and contribute to the developments .
  
-# packages : it is a supporting library i.e.(ready-made code)
+# packages : it is a supporting library that developers install in the project and reuse to solve problems and save time."
 
     
 # json : 
@@ -233,9 +233,9 @@ Get > Retrieve the data
 Put/Patch > Update the records
 Delete > Remove
 
-// To access the method of express we have to call function of express .
+# To access the method of express we have to call function of express .
 
-=> Try express router when dealing with routes . 
+# Try express router when dealing with routes . 
 
 # ===================Day 3 ==================================
 
