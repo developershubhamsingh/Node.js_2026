@@ -239,16 +239,15 @@ Delete > Remove
 
 # ===================Day 3 ==================================
 
-=> ejs(embedded js) / swig / pug /vas handle bar are template engine middleware (i.e.supporting library) for making small application and showing less content with ui .
+# Template Engines (e.g., EJS, Pug) are supporting libraries used to create dynamic HTML pages on the server side using JavaScript .
 
-=> in normal index.js file you cannot binned the data but through ejs you can binned .
+# in normal index.js file you cannot binned the data but through ejs you can binned .
+  > npm i ejs .
+  > write logics within <% logics %> 
+  > else for binding <%=variable names%> 
 
-=> npm i ejs .
-=> when writing logics <% logics %> 
-=> else for binding <%=variable names%> 
-
-=> destructing in js : if both the side have the same value then remove one value and write one value .
-    ex: category = category (then write it as only)  category .
+# destructing in js : if both the side have the same value then remove one value and write one value .
+  > ex: category = category (then write it as only)  category .
 # Note:अधिकतर cases में इसे नहीं लिखना चाहिए 👉 apps.use(express.static(path.join(__dirname, "./views")))
 # Static folder use होता है:👉 CSS Images JS files Fonts 
 
