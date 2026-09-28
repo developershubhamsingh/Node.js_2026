@@ -6,6 +6,7 @@ let apps = express();
 let port = 7000;
 import { fileURLToPath } from "url";
 import path from "path";
+import dbConnect from "./src/controller/dbConnects.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename)
@@ -20,7 +21,7 @@ let menu = [
 // static files
 apps.use(express.static(__dirname + "/public"))
 // ejs files
-apps.set("views", "./src/view")
+apps.set("views", "./src/view") 
 // view engine
 apps.set("view engine", "ejs")
 
@@ -32,8 +33,9 @@ apps.get("/", (req, res) => {
 apps.use("/category", categoryRouter(menu));
 apps.use("/products", productsRouter(menu));
 
-apps.listen(port, () => {
+apps.listen(port, async () => {
     console.log(`Server Running On Port ${port}`)
+    await dbConnect();
 }).on("error", (Error) => {
     console.log(`Server Running Error ${Error}`)
 })   
