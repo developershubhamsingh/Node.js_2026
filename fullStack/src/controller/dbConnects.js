@@ -13,7 +13,8 @@ const dbConnect = async () => {
         console.error("Problem In Connecting To Database", error)
     }
 }
+const getData = async (collectionName, query) => {
+    return await db.collection(collectionName).find(query).toArray();
+}
 
- 
-
-export default dbConnect;
+export { dbConnect, getData }
