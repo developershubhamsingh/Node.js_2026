@@ -7,6 +7,8 @@ const Router = (menu) => {
         let query = {};
         let products = await getData("products", query);
         res.render("products", { title: "Products Page", products, menu })
+        // res.send(products)
+        // http://localhost:7000/products
     })
     productsRouter.route("/list/:id")
         .get(async (req, res) => {
@@ -17,6 +19,9 @@ const Router = (menu) => {
             let query = { category_id: Number(id) }
             let products = await getData("products", query);
             res.render("products", { title: "Products Page", products, menu })
+            // res.send(products)
+            // http://localhost:7000/products/list/1
+            //http://localhost:7000/products/list/2
         })
     return productsRouter;
 }
