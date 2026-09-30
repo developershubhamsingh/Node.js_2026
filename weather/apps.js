@@ -2,21 +2,40 @@ import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
+import { fileURLToPath} from "url";
+import path from "path";
 let apps = express();
 let port = 7000;
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
+//static file
+apps.use(express.static(__dirname + "./public"))
+// ejs file
+apps.set("views", "./src/view")
+//view engine
+apps.set("view engine", "ejs")
+
+ 
 apps.get("/", async (req, res) => {
     try {
         let city = req.query.city ? req.query.city.toLowerCase() : "delhi"
-        let Url = `https://api.openweathermap.org/data/2.5/weather?q=delhi&units=metric&appid=b8a5e083be34c10a318010d587eb276c`;
+        let Url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.KEY}`;
         let response = await axios.get(Url);
-        let result = response.data;
-        res.send(result)
+        let data = response.data;
+        // res.send(data)
+         res.status(200).render("index", { title: "weather", data: data });
     } catch (error) {
-        console.error("Problem In getting Weather Data", error)
+        console.error(error)
+        res.status(error.response?.status || 500).json({
+            success: false,
+            message: "Problem In getting Weather Data",
+            error: error.message
+        })
     }
 })
+
 
 
 apps.listen(port, () => {
