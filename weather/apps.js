@@ -2,7 +2,7 @@ import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
-import { fileURLToPath} from "url";
+import { fileURLToPath } from "url";
 import path from "path";
 let apps = express();
 let port = 7000;
@@ -17,7 +17,7 @@ apps.set("views", "./src/view")
 //view engine
 apps.set("view engine", "ejs")
 
- 
+
 apps.get("/", async (req, res) => {
     try {
         let city = req.query.city ? req.query.city.toLowerCase() : "delhi"
@@ -25,9 +25,12 @@ apps.get("/", async (req, res) => {
         let response = await axios.get(Url);
         let data = response.data;
         // res.send(data)
-         res.status(200).render("index", { title: "weather", data: data });
+        console.clear();
+        console.log(`Success: Weather data sent for city`);
+        res.status(200).render("index", { data: data });
     } catch (error) {
-        console.error(error)
+        console.clear();
+        console.error(error.response?.data || error.message)
         res.status(error.response?.status || 500).json({
             success: false,
             message: "Problem In getting Weather Data",

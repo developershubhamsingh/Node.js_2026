@@ -22,7 +22,8 @@
 
   > This reduces context-switching, speeds up development, and makes data transfer seamless."
 
-# Library: It is a collection of ready-made or pre-written code that provides specific functionalities.
+# Library: It is a collection of helper functions, modules or pre-written code that provides specific functionalities.
+  > Ex: Axios is a library used to make HTTP requests.
 
 git init    
 git add .
@@ -126,8 +127,8 @@ dev
   > npm i package name --save-dev
 
   > Those package which are required at the time of development called as dev dependencies like Logging or for test cases.
-
   > npm i chai --save-dev 
+  
   > hence node module is heavy folder to avoid the load over that we divide what to install on server wht not to install we differentiate between that .
 
 # Basic NodeJS (Inbuilt package in node) (Os,file,http)
