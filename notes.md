@@ -367,7 +367,14 @@ MongoDb (NoSql) :
     "start": "babel-node apps.js",
     "dev": "nodemon --exec babel-node apps.js"
   }
-  
+
+## Production Deployment Strategy
+# Project Code ➡️ GitHub (Public/Private)
+   > node_modules , .env file should be in .gitignore file.
+# Database Data ➡️ MongoDB Atlas (Cloud Database):
+# Backend Live & Secrets ➡️ Render (Cloud Hosting):
+   >  Deploy .env keys directly into Render's Environment Variables.
+
  ## mongodb clouds setups: 
  # > free claster : 
  # > Username : shubhamsinghhindustan_db_user 
@@ -375,24 +382,9 @@ MongoDb (NoSql) :
  
 http://cloud.mongodb.com/
 
-> Create Cluster
-
-> Cloud
-* https://www.mongodb.com/
-* try free
-> signup with google
-
-* Network access
-> Add IP 
-> 0.0.0.0/0
-* Database access
-> Create user
-Built-in Role
-> Atlas Admin
-> Add User
-
+> Create Cluster > Database & Network Access =>In Database Users Add Database user > Add New Database > In Password Authentication => enter user name => click on Autogenerate Passwords copy user name Passwords > Then In Built-in Role choose => Atlas admin > click on Add user > Then In Network Access > click on Add IP Address write 0.0.0.0/0 (In company it will be given) > return to database > click on connect > click on drivers > copy the connection string link > replace link with user name generated Passwords > copy the new link go to MongoDB Compass > click on Add > paste the url > click on save connect .
+ 
 mongodb+srv://<db_username>:<db_password>@cluster0.f8vmc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-
    
  # > Username :   test
  # > Password :  cigVxikvbvqVZRro 

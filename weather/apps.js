@@ -2,13 +2,13 @@ import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
 dotenv.config();
-import { fileURLToPath } from "url";
-import path from "path";
+// import { fileURLToPath } from "url";
+// import path from "path";
 let apps = express();
 let port = 7000;
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = path.dirname(__filename);
 
 //static file
 apps.use(express.static(__dirname + "./public"))
