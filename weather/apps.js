@@ -31,14 +31,13 @@ apps.get("/", async (req, res) => {
     } catch (error) {
         console.clear();
         console.error(error.response?.data || error.message)
-        res.status(error.response?.status || 500).json({
+         res.status(error.response?.status || 500).json({
             success: false,
             message: "Problem In getting Weather Data",
             error: error.message
         })
     }
 })
-
 
 
 apps.listen(port, () => {

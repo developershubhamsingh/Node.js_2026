@@ -193,7 +193,7 @@ avoid port numbers 8080
 # install global packages
     # window
     > open cmd as admin
-    > npm i -g nodemon
+    > npm i nodemon -g 
     
 #  make changes in package.json
         "scripts": {
@@ -330,7 +330,7 @@ MongoDb (NoSql) :
 ✅ Option 1: Use /forecast (Free plan)
 
 # > यह अगले 5 दिनों का data देता है, हर 3 घंटे पर एक record के साथ।
-# >let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${process.env.key}`;
+# > let url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${process.env.key}`;
  
 # HTTP Status Codes : 
   > 200 => OK 
@@ -338,7 +338,7 @@ MongoDb (NoSql) :
   > 400 => Bad Request
   > 401 => Unauthorized
   > 403 => Forbidden
-  > 404 => 	Not Found
+  > 404 => Not Found
   > 500 => Internal Server Error
 
 # Babel :
@@ -353,24 +353,22 @@ MongoDb (NoSql) :
 # > Babel automatically converts modern JS code into an older version, so it works everywhere.
 
 # install few package to work with babel : 
- # >  npm i @babel/core  @babel/preset-env  @babel/register .
+ # >  npm i @babel/core  @babel/preset-env  @babel/node --save-dev .
+  > Note: Install these packages with -D or --save-dev because the compiler is only needed during development, not in production [MERN].
+
  # > then create a file .babelrc and write there 
   {
     "presets":[
         "@babel/preset-env"
      ]
-}
-
-  # > then create a file start.js and write there
-require('babel-register')({});
-module.exports = require('./app.js');
- 
- # > then change  "scripts": {
-    "script": "node start.js",
-    "dev": "nodemon start.js"
   }
-  # >adds "main": "start.js",
-## mongodb clouds setups: 
+
+ # > then change  "scripts": {
+    "start": "babel-node apps.js",
+    "dev": "nodemon --exec babel-node apps.js"
+  }
+  
+ ## mongodb clouds setups: 
  # > free claster : 
  # > Username : shubhamsinghhindustan_db_user 
  # > Password : shubhamsinghhindustan_db_user
