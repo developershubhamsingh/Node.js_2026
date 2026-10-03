@@ -508,6 +508,8 @@ External API से data लाने के लिए
 अपने server से दूसरे server को request भेजने के लिए
 Ex :const data = await axios.get("https://api.example.com/users");
 
+> NX: true का मतलब होता है: "यह डेटा केवल तब सेव करो जब यह चाबी (Key) Redis में बिल्कुल न हो।"
+
 ### ✅ Nodemailer :
  
 # > Nodemailer is a Node.js module used to send emails from your server.
