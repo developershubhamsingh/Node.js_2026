@@ -11,8 +11,10 @@
 
   > Bcz JavaScript is common thread connecting all of them.
 
-  > React is JS library, Node.js is JS runtime for the backend  
+  > React is JS library  
         > React is a JS library because it only focuses on building the UI and leaves total control of the application architecture to the developer.
+        
+  > Node.js is JS runtime for the backend        
         > Node.js is a JS runtime because it provides an environment to run JavaScript code directly on a computer server instead of a browser.
         > Node.js provides an environment by incorporating the V8 engine and C++ modules to execute JavaScript code
 
@@ -44,26 +46,36 @@ git push -u origin main
 # Nodejs Features : it is single threaded ,async ,non blocking I / O .
   > Thread = A way to execute Instructions .
   
-  > single threaded  : Node.js uses only one main thread to handle all client requests.
+  > single threaded  : Node.js uses only one main thread( i.e. Event Loop) to handle all client requests.
 
   > async : Multiple tasks can be started without waiting for previous tasks to finish. 
 
-  > non blocking I / O : Input/Output tasks (like reading file, DB query, API call) runs in the background, and meanwhile Node.js can accept new requests.
+  > non blocking I / O : Input/Output time consuming tasks (like reading file, DB query, API call) runs in the background, and meanwhile Node.js can accept new requests.
 
 # NPM: https://www.npmjs.com/
-   > It is a open source registry 
-   > where all the packages are kept
-   > that anyone can try and contribute to the developments .
+   > It is a open source registry .
+   > Where all the packages are kept .
+   > That anyone can try and contribute to the developments .
  
-# packages : it is a supporting library that developers install in the project and reuse to solve problems and save time."
+# packages :
+  > It is a supporting library .
+  > That developers install in the project and reuse to solve problems and save time.
 
     
 # json : 
   >  javascript Object Notation .
   >  It is a Format to represent the data .
-  >  It is array of objects .
+  >  It cab be a single objects or array of objects .
 
-Ex : [
+>> Ex : 
+> single objects :
+   {
+            name: "3idiot" ,
+            type :"education" ,
+            ind : "bollywood"
+        },
+> array of objects : 
+  [
         {
             name: "3idiot" ,
             type :"education" ,
@@ -76,16 +88,17 @@ Ex : [
         }
     ]
 
-# object : single records but array of objects is multiple records mentioned above.
-       {
+# object : It is a single record but array of objects is multiple records mentioned above.
+  > Ex  {
             name: "3idiot" ,
             type :"education" ,
             ind : "bollywood"
         }
+
 # package.json : 
-   >  This is configuration file of the applications .
+   >  This is the configuration file of the applications .
    >  Contains metadata (name,version.descriptions).
-   >  Contains scripts( run ,build,test) .
+   >  Contains scripts( run,build,test) .
    >  Contains record of the packages install .
 
 # step to generate package.json 
@@ -123,15 +136,15 @@ dev
   > Those packages which are required for the application to run in production.
   > npm i package name  
 
-# for dev dependency
-  > npm i package name --save-dev
-
+# dev dependency:
   > Those package which are required at the time of development called as dev dependencies like Logging or for test cases.
+  > npm i package name --save-dev
   > npm i chai --save-dev 
   
-  > hence node module is heavy folder to avoid the load over that we divide what to install on server wht not to install we differentiate between that .
+ # Why to Separate Dependencies and devDependencies?
+ > Hence node module is heavy folder to avoid the load over that we divide what to install on server wht not to install we differentiate between that .
 
-# Basic NodeJS (Inbuilt package in node) (Os,file,http)
+# Basic NodeJS (Inbuilt) package in node (Os,file,http) :
 
 > Digital Memory Hierarchy (Sequence Table)
   > Bytes (B) → Kilobytes (KB) → Megabytes (MB) → Gigabytes (GB) → Terabytes (TB) 
@@ -149,26 +162,26 @@ dev
 
 # fs : 
 writefile()
-    > The writeFile() method is used to create a new file and write content to it.
-    > it takes 3 parameters (filename ,data ,callback).
-    > If the file already exists, it will be overwritten.
-    > writeFile replaces the old content with new content when it runs.
+  > The writeFile() method is used to create a new file and write content to it.
+  > it takes 3 parameters (filename ,data ,callback).
+  > If the file already exists, it will be overwritten.
+  > writeFile replaces the old content with new content when it runs .
 appendFile()
-    > The appendFile() method is used to add content to an existing file.
-    > it takes 3 parameters(filename ,data ,callback).
-    > If the file does not exist, it will be created.
-    > it will keep adding the content no of times the file will run.
+  > The appendFile() method is used to add content to an existing file.
+  > it takes 3 parameters(filename ,data ,callback).
+  > If the file does not exist, it will be created.
+  > it will keep adding the content no of times the file will run.
 readFile()
-    > it takes 3 parameters(filename ,encoding ,callback).
-    > callback takes two parameters i.e. (error ,data).
-    > The readFile() method is used to read the content of a file.
-unlink()
-    > it takes 2 parameters(filename ,callback).
-    > The unlink() method is used to delete a file from the file system.
-rename()
-    > it takes 3 parameters(oldFilename ,newFilename ,callback).
-    > The rename() method is used to change the name of a file .
-    
+  > The readFile() method is used to read the content of a file.
+  > it takes 3 parameters(filename ,encoding ,callback).
+  > callback takes two parameters i.e. (error ,data).
+ unlink()
+  > The unlink() method is used to delete a file from the file system.
+  > it takes 2 parameters(filename ,callback).
+ rename()
+  > The rename() method is used to change the name of a file .
+  > it takes 3 parameters(oldFilename ,newFilename ,callback).
+     
 # callback function : when we pass function as a parameter in another function .
 
 # Apis : It is a url or endpoint , developed in backend that mostly returns json format of data when hit or calls . 
