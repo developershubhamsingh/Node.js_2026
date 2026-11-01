@@ -209,7 +209,7 @@ avoid port numbers 8080
   > npm i eslint -D ( to evergy project folder).
   > npx eslint --init (automatically creates eslint.config.js file).+ +
   > download extension in vs code eslint by microsoft.
-
+   
 # install global packages
     # window
     > open cmd as admin
