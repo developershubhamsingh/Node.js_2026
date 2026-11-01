@@ -4,6 +4,17 @@
 # https://endoflife.date/  
 # https://survey.stackoverflow.co/2025/technology/
 
+git init    
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/developershubhamsingh/Node.git
+git push -u origin main
+
+git remote add origin https://github.com/developershubhamsingh/Node.git
+git branch -M main
+git push -u origin main
+
 # git bash : through git bash you can push code to github.
 # ctrl + f to search in a file .
 
@@ -26,18 +37,6 @@
 
 # Library: It is a collection of helper functions, modules or pre-written code that provides specific functionalities.
   > Ex: Axios is a library used to make HTTP requests.
-
-git init    
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/developershubhamsingh/Node.git
-git push -u origin main
-
-git remote add origin https://github.com/developershubhamsingh/Node.git
-git branch -M main
-git push -u origin main
-
 
 # Node.js allows to run JavaScript code outside the browser, especially on the computer server.
 > It is used to build server-side applications.
@@ -65,15 +64,15 @@ git push -u origin main
 # json : 
   >  javascript Object Notation .
   >  It is a Format to represent the data .
-  >  It cab be a single objects or array of objects .
+  >  It can be a single objects or array of objects .
 
 >> Ex : 
 > single objects :
-   {
-            name: "3idiot" ,
-            type :"education" ,
-            ind : "bollywood"
-        },
+  {
+    name: "3idiot" ,
+    type :"education" ,
+    ind : "bollywood"
+  },
 > array of objects : 
   [
         {
@@ -134,12 +133,15 @@ dev
 # ===================Day 2 ==================================
 # Dependencies:
   > Those packages which are required for the application to run in production.
-  > npm i package name  
+  > npm i package name  .
+  > It s a part of package.json file under dependencies objects .
 
 # dev dependency:
   > Those package which are required at the time of development called as dev dependencies like Logging or for test cases.
-  > npm i package name --save-dev
-  > npm i chai --save-dev 
+  > npm i package name --save-dev or npm i package_name -D.
+  > npm i chai --save-dev .
+  > It s a part of package.json file under devDependencies objects .
+
   
  # Why to Separate Dependencies and devDependencies?
  > Hence node module is heavy folder to avoid the load over that we divide what to install on server wht not to install we differentiate between that .
@@ -202,6 +204,11 @@ avoid port numbers 8080
 # nodemon : 
     every time we make change in file or code we need to restart the server to reflect the content in the browser so nodemon package helps to get over this.
     npm i nodemon
+
+# eslint : It helps by showing errors through red line and warnings through yellow line.
+  > npm i eslint -D ( to evergy project folder).
+  > npx eslint --init (automatically creates eslint.config.js file).+ +
+
 
 # install global packages
     # window
