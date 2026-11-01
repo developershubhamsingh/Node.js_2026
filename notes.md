@@ -208,7 +208,7 @@ avoid port numbers 8080
 # eslint : It helps by showing errors through red line and warnings through yellow line.
   > npm i eslint -D ( to evergy project folder).
   > npx eslint --init (automatically creates eslint.config.js file).+ +
-
+  > download extension in vs code eslint by microsoft.
 
 # install global packages
     # window
