@@ -209,7 +209,16 @@ avoid port numbers 8080
   > npm i eslint -D ( to evergy project folder).
   > npx eslint --init (automatically creates eslint.config.js file).+ +
   > download extension in vs code eslint by microsoft.
-   
+
+# npm i @types/express @types/node -D चलाने से आपके प्रोजेक्ट में Express और Node.js के "टाइप डेफिनिशन" (Type Definitions) इंस्टॉल हो जाएंगे। इससे आपका VS Code बिना TypeScript (.ts) के भी आपकी .js फ़ाइल को पूरी तरह समझ पाएगा।
+  > नीचे दाईं तरफ़ देखें. VS Code की सबसे नीचे वाली पट्टी में जहां JavaScript लिखा है, उसके ठीक बगल में {} आइकन दिखेगा क्लिक करें।
+  > 1. Configure क्लिक करें. वहाँ "Configure jsconfig.json" (या "Create jsconfig.json") का ऑप्शन दिखेगा क्लिक करते ही आपके प्रोजेक्ट फोल्डर में jsconfig.json फ़ाइल अपने आप बनकर खुल जाएगी। 
+  > select "checkJs": true,
+  > Delete "strict": true
+  > in terminal npm i @types/express @types/node -D 
+
+
+
 # install global packages
     # window
     > open cmd as admin
